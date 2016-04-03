@@ -29,8 +29,6 @@ Value : the number of minutes that you used
 
 Value : the number of lines that your account have
 
-#end input
+#how to end this program
 
-Type : int
-
-Value : 0
+just type '0' in first input
