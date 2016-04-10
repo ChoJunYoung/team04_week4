@@ -30,7 +30,8 @@ public class Calculator {
 		double additionalRate;
 
 		if (numberOfLine >= FAMILY_DISCOUNT) {
-			additionalRate = ADDITIONAL_LINE_DISCOUNT * userPlanType.getAdditionalLineRate() + ADDITIONAL_LINE_FEE * (user.line - ADDITIONAL_LINE_BASELINE);
+			additionalRate = ADDITIONAL_LINE_DISCOUNT * userPlanType.getAdditionalLineRate()
+					+ ADDITIONAL_LINE_FEE * (user.line - ADDITIONAL_LINE_BASELINE);
 		} else {
 			additionalRate = (user.line - 1) * userPlanType.getAdditionalLineRate();
 		}
@@ -48,8 +49,8 @@ public class Calculator {
 		return exceedRate;
 	}
 
-	public double calculateTotalRate(){
-		billCharged = calculateBasicRate()+calculateAdditionalRate()+calculateExceededRate();
+	public double calculateTotalRate() {
+		billCharged = calculateBasicRate() + calculateAdditionalRate() + calculateExceededRate();
 		return billCharged;
 	}
 

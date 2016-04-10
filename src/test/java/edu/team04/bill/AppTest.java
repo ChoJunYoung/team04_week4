@@ -5,19 +5,6 @@ import org.junit.Test;
 
 public class AppTest {
 
-
-import org.junit.*;
-
-/**
- * Unit test for simple App.
- */
-public class AppTest {
-	/**
-	 * Create the test case
-	 *
-	 * @param testName
-	 *            name of the test case
-	 */
 	@Test
 	public void testEx1True() {
 		double total;
@@ -77,10 +64,10 @@ public class AppTest {
 
 		assertEquals(total, 94.29, 0.05);
 	}
-	
+
 	@Test
 	public void testApp() {
-		String[] args = {"100","3","silver"};
+		String[] args = { "100", "3", "silver" };
 		App.main(args);
 	}
 }

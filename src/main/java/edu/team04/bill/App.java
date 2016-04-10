@@ -15,8 +15,8 @@ public class App {
 		plan = args[2];
 
 		Calculator c = new Calculator(min, line, plan);
-		
-		total = c.calculateTotalRate();
+
+		double total = c.calculateTotalRate();
 
 		log.info("your total rate is " + total);
 	}
