@@ -4,6 +4,20 @@ import java.util.logging.Logger;
 
 public class App {
 
+	private static App appinstance;
+
+	private App() {
+
+	}
+
+	public static App getInstance() {
+		if (appinstance == null) {
+			appinstance = new App();
+		}
+
+		return appinstance;
+	}
+
 	public static void main(String[] args) {
 		Logger log = Logger.getLogger(App.class.getName());
 		int min;

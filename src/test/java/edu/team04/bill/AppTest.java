@@ -130,6 +130,7 @@ public class AppTest {
 	@Test
 	public void testApp() {
 		String[] args = { "100", "3", SILVER_TYPE };
+		App a = App.getInstance();
 		App.main(args);
 	}
 }
