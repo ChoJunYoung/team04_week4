@@ -8,11 +8,23 @@ import java.util.logging.Logger;
  *
  */
 public class App {
-	private App() {
-
-	}
 
 	public static void main(String[] args) {
+	
+		int min;
+		int line;
+		String plan;
+		
+		min = Integer.parseInt(args[0]);
+		line = Integer.parseInt(args[1]);
+		plan = args[2];
+		
+		Calculator c = new Calculator(min,line,plan);
+		
+		double total = c.calculateTotalRate();
+		
+		
+		/*
 		Scanner scan = new Scanner(System.in);
 		String planType;
 		String minUsage;
@@ -52,5 +64,6 @@ public class App {
 
 			log.info("your total fee is " + totalFee);
 		}
+		*/
 	}
 }

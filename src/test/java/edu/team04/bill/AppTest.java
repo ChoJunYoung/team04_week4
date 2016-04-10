@@ -36,4 +36,10 @@ public class AppTest {
 		assertEquals(83.95,c.calculateTotalRate(),0.1);
 	}
 	
+	@Test
+	public void maintest(){
+		String[] args = {"1000","3","gold"};
+		App.main(args);
+	}
+	
 }
