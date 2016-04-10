@@ -131,6 +131,6 @@ public class AppTest {
 	public void testApp() {
 		String[] args = { "100", "3", SILVER_TYPE };
 		App a = App.getInstance();
-		a.main(args);
+		App.main(args);
 	}
 }
