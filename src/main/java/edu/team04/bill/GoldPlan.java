@@ -8,6 +8,7 @@ public class GoldPlan implements PlanType {
 	private double goldAdditionalLineRate = 14.5;
 	private double goldFamilyDiscountRate = 5;
 
+	@Override
 	public double getBasicMonthlyRate() {
 		return goldBasicRate;
 	}
