@@ -25,12 +25,12 @@
   <build>
     <resources>
       <resource>
-        <directory>src/main/resources</directory>
+        <directory>src/main/java/edu/team04/bill</directory>
       </resource>
     </resources>
 	<testResources>
       <testResource>
-        <directory>src/main/resources</directory>
+        <directory>src/test/java/edu/team04/bill</directory>
       </testResource>
 	</testResources>
     
