@@ -7,7 +7,7 @@ public class Calculator {
 	private double billCharged;
 	static final int FAMILY_DISCOUNT = 4;
 	static final int ADDITIONAL_LINE_DISCOUNT = 2;
-	static final int ADDITIONAL_LINE_FEE = 5;
+	//static final int ADDITIONAL_LINE_FEE = 5;
 	static final int ADDITIONAL_LINE_BASELINE = 3;
 
 	Calculator(int line, int min, String plan) {
@@ -30,7 +30,7 @@ public class Calculator {
 		double additionalRate;
 
 		if (numberOfLine >= FAMILY_DISCOUNT) {
-			additionalRate = ADDITIONAL_LINE_DISCOUNT * userPlanType.getAdditionalLineRate() + ADDITIONAL_LINE_FEE * (user.line - ADDITIONAL_LINE_BASELINE);
+			additionalRate = ADDITIONAL_LINE_DISCOUNT * userPlanType.getAdditionalLineRate() + userPlanType.getFamilyDiscountRate() * (user.line - ADDITIONAL_LINE_BASELINE);
 		} else {
 			additionalRate = (user.line - 1) * userPlanType.getAdditionalLineRate();
 		}
