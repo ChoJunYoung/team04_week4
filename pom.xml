@@ -8,8 +8,7 @@
 
   <name>bill</name>
   <url>http://maven.apache.org</url>
-  
-  
+ 
   <build>
     <resources>
       <resource>
