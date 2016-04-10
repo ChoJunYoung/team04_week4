@@ -1,6 +1,6 @@
-package team04.week4.bill;
+package edu.team04.bill;
 
-public class SilverPlan implements planType {
+public class SilverPlan implements PlanType {
 
 	private double silverBasicRate = 29.95;
 	private int silverIncludedMinute = 500;

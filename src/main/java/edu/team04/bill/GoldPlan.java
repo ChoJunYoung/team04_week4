@@ -1,6 +1,6 @@
-package team04.week4.bill;
+package edu.team04.bill;
 
-public class GoldPlan implements planType {
+public class GoldPlan implements PlanType {
 
 	private double goldBasicRate = 49.95;
 	private int goldIncludedMinute = 1000;
