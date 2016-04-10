@@ -3,10 +3,6 @@ package edu.team04.bill;
 import java.util.Scanner;
 import java.util.logging.Logger;
 
-/**
- * Hello world!
- *
- */
 public class App {
 
 	public static void main(String[] args) {
@@ -20,12 +16,17 @@ public class App {
 		Calculator cal;
 		Logger log = Logger.getLogger(App.class.getName());
 
-//		while (true) {
+		min = Integer.parseInt(args[0]);
+		lines = Integer.parseInt(args[1]);
+		planType = args[2];
+		
+		/*
+		while (true) {
 			log.info("input your plan type(exit is 0)");
 
 			planType = scan.nextLine();
-//			if ("0".equals(planType))
-//				break;
+			if ("0".equals(planType))
+				break;
 
 			log.info("your plan type is " + planType);
 
@@ -48,6 +49,7 @@ public class App {
 			totalFee = cal.calculateTotalRate();
 
 			log.info("your total fee is " + totalFee);
-//		}
+		}
+	*/
 	}
 }

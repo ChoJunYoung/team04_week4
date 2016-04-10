@@ -99,8 +99,7 @@ public class AppTest {
 	
 	@Test
 	public void testApp() {
-		String[] args = null;
-		
+		String[] args = {"100","3","silver"};
 		App.main(args);
 	}
 }
