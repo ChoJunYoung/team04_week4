@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class AppTest {
-/*
+
 	private GoldPlan tGoldPlan;
 	private SilverPlan tSilverPlan;
 
@@ -27,19 +27,5 @@ public class AppTest {
 		assertEquals(0.54, tSilverPlan.getExcessMinuteRate(), 0);
 		assertEquals(5, tSilverPlan.getFamilyDiscountRate(), 0);
 	}
-	
-*/
-	@Test
-	public void testGold(){
-		Calculator c = new Calculator(4,878,"gold");
 
-		assertEquals(83.95,c.calculateTotalRate(),0.1);
-	}
-	
-	@Test
-	public void maintest(){
-		String[] args = {"1000","3","gold"};
-		App.main(args);
-	}
-	
 }
