@@ -8,6 +8,7 @@
 
   <name>bill</name>
   <url>http://maven.apache.org</url>
+  
   <dependencies>
   <dependency>
 	<groupId>junit</groupId>
@@ -21,4 +22,40 @@
   </properties>
 
   <groupId>edu.team04</groupId>
+  <build>
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+      </resource>
+    </resources>
+	<testResources>
+      <testResource>
+        <directory>src/main/resources</directory>
+      </testResource>
+	</testResources>
+    
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.jacoco</groupId>
+        <artifactId>jacoco-maven-plugin</artifactId>
+        <version>0.7.6.201602180812</version>
+        <executions>
+          <execution>
+            <id>default-prepare-agent</id>
+            <goals>
+              <goal>prepare-agent</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+   </plugins>
+   
+  </build>
 </project>
