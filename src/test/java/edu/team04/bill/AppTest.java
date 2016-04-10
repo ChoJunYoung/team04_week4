@@ -31,9 +31,9 @@ public class AppTest {
 */
 	@Test
 	public void testGold(){
-		Calculator c = new Calculator(5,1100,"silver");
+		Calculator c = new Calculator(4,878,"gold");
 
-		assertEquals(83.95,c.calculateTotalRate(),0.01);
+		assertEquals(83.95,c.calculateTotalRate(),0.1);
 	}
 	
 }
