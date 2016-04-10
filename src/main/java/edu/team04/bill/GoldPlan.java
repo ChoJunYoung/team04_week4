@@ -13,18 +13,22 @@ public class GoldPlan implements PlanType {
 		return goldBasicRate;
 	}
 
+	@Override
 	public double getExcessMinuteRate() {
 		return goldExcessRate;
 	}
 
+	@Override
 	public double getAdditionalLineRate() {
 		return goldAdditionalLineRate;
 	}
 
+	@Override
 	public int getIncludedMinute() {
 		return goldIncludedMinute;
 	}
 
+	@Override
 	public double getFamilyDiscountRate() {
 		return goldFamilyDiscountRate;
 	}
