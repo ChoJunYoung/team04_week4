@@ -4,6 +4,10 @@ import java.util.logging.Logger;
 
 public class App {
 
+	private App() {
+
+	}
+
 	public static void main(String[] args) {
 		Logger log = Logger.getLogger(App.class.getName());
 		int min;
