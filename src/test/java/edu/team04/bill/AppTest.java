@@ -3,6 +3,8 @@ package edu.team04.bill;
 import static org.junit.Assert.*;
 import org.junit.Test;
 
+import junit.framework.Assert;
+
 /**
  * Unit test for simple App.
  */
@@ -22,6 +24,10 @@ public class AppTest {
 	@Test
 	public void testSilverPlan() {
 		tSilverPlan = new SilverPlan();
-		Assert.assertE
+		assertEquals(29.95, tSilverPlan.getBasicMonthlyRate(),0);
+		assertEquals(500, tSilverPlan.getIncludedMinute(),0);
+		assertEquals(21.50, tSilverPlan.getAdditionalLineRate(),0);
+		assertEquals(0.54, tSilverPlan.getExcessMinuteRate(),0);
+		assertEquals(5, tSilverPlan.getFamilyDiscountRate(),0);
 	}
 }
