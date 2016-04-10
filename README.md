@@ -12,27 +12,10 @@ Analysis properties : sonar.sources=bill
 
 #How to compile and run this project
 
-mvn package // on maven cli
-- at latest version
+mvn package
+- with maven cli tool at latest version
 
-java -cp bill-0.0.2.jar edu.team04.bill.App and 
-- follow the instruction below
-
-
-#first input
-
-Type : String
-
-Value : 'silver' or 'gold'
-
-#second input
-
-Value : the number of lines that your account have
-
-#third input
-
-Value : the number of lines that your account have
-
-#how to end this program
-
-just type '0' in first input
+java -cp bill-0.0.2.jar edu.team04.bill.App [NUM_OF_LINES] [USED_MINUTES] [PLAN_TYPE] 
+- and follow the instruction below
+- gold type is 'gold'
+- silver type is 'silver'
