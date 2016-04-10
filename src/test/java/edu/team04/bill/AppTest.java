@@ -96,4 +96,11 @@ public class AppTest {
 		assertEquals(0.54, tSilverPlan.getExcessMinuteRate(), 0);
 		assertEquals(5, tSilverPlan.getFamilyDiscountRate(), 0);
 	}
+	
+	@Test
+	public void testApp() {
+		String[] args = null;
+		
+		App.main(args);
+	}
 }

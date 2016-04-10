@@ -8,9 +8,6 @@ import java.util.logging.Logger;
  *
  */
 public class App {
-	private App() {
-
-	}
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
@@ -23,12 +20,12 @@ public class App {
 		Calculator cal;
 		Logger log = Logger.getLogger(App.class.getName());
 
-		while (true) {
+//		while (true) {
 			log.info("input your plan type(exit is 0)");
 
 			planType = scan.nextLine();
-			if ("0".equals(planType))
-				break;
+//			if ("0".equals(planType))
+//				break;
 
 			log.info("your plan type is " + planType);
 
@@ -51,6 +48,6 @@ public class App {
 			totalFee = cal.calculateTotalRate();
 
 			log.info("your total fee is " + totalFee);
-		}
+//		}
 	}
 }
