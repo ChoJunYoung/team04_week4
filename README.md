@@ -12,7 +12,11 @@ Analysis properties : sonar.sources=bill
 
 #How to compile and run this project
 
-mvn package // on maven cli(at latest version) jar -cp bill-0.0.2.jar edu.team04.bill.App and follow the instruction below
+mvn package // on maven cli
+- at latest version
+
+java -cp bill-0.0.2.jar edu.team04.bill.App and 
+- follow the instruction below
 
 
 #first input
